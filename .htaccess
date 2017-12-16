@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^css/(.*)$ /view/css/$1 [L]
+
+RewriteRule ^assets/(.*)$ /view/assets/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
