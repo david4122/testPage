@@ -6,12 +6,9 @@
 		private $template;
 		private $variables;
 
-		function __construct(){
-			$this->variables = array();
-		}
-
-		public function setTemplate($template){
+		function __construct($template){
 			$this->template = $template;
+			$this->variables = array();
 		}
 
 		public function assign($array){

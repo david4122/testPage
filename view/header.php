@@ -26,7 +26,7 @@
 				<div class="wrap">
 					<ul id="navbar">
 						<li class="nav-item">
-							<a href="">Test</a>
+							<a href="/">Test</a>
 						</li>
 						<li class="dropdown nav-item">
 							<a href="">Dropdown</a>
@@ -43,7 +43,7 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="">Test3</a>
+							<a href="/example">Example</a>
 						</li>
 						<li class="dropdown nav-item">
 							<a href="">Nested</a>

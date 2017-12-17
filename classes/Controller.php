@@ -1,6 +1,6 @@
 <?php
 
 	interface Controller {
-		public function doAction($action);
+		public function doAction($request);
 	}
 ?>

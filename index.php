@@ -1,12 +1,20 @@
 <?php
 
-	include 'classes/Template.php';
+	function autoloadControllers($classname){
+		if(file_exists('controllers/'.$classname.'.php')){
+			require_once 'controllers/'.$classname.'.php';
+		}
+	}
+		
+	spl_autoload_register(autoloadControllers);
 
-	$template = new Template();
-	$template->setTemplate('index.php');
-	$template->assign(array(
-		'title' => 'Testing',
-		'description' => 'Test page'
-	));
-	$template->display();
+	function autoloadClasses($classname){
+		if(file_exists('classes/'.$classname.'.php')){
+			require_once 'classes/'.$classname.'.php';
+		}
+	}
+
+	spl_autoload_register(autoloadClasses);
+
+	Router::run();
 ?>
