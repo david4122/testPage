@@ -11,7 +11,7 @@
 	<body>
 		<header>
 			<div class="row wrap">
-				<div>
+				<div id="logo-wrapper">
 					<a href="/">
 						<img id="logo" src="/assets/ubuntu.svg" alt="logo"/>
 					</a>
@@ -22,7 +22,6 @@
 					</a>
 				</div>
 			</div>
-			<div style="clear: both;"></div>
 			<div id="navbar-block">
 				<div class="wrap">
 					<ul id="navbar">
@@ -115,8 +114,8 @@
 						<li class="nav-item">
 							<a href="">Test5</a>
 						</li>
-						<div style="clear: both;"></div>
 					</ul>
+					<div style="clear: both"></div>
 				</div>
 			</div>
 			<div id="navbar-replacer" style="height: 0px;"></div>

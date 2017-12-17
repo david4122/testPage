@@ -19,8 +19,8 @@
 		}
 
 		public function display(){
-			global $templateDir;
 			extract($this->variables);
+			$templateDir = constant('TEMPLATE_DIR');
 			include $templateDir.'header.php';
 			include $templateDir.$this->template;
 			include $templateDir.'footer.php';
