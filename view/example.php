@@ -1,9 +1,11 @@
 <div class="wrap content">
 	<?= $content ?>
 </div>
-<div class="row" style="background-color: #77216F">
+<div style="background-color: #77216F; color: #FFF">
 	<div class="wrap">
-		fawfawfawfawfawawgewge
+		<p>
+			short text on different background
+		</p>
 	</div>
 </div>
 <div class="wrap content">

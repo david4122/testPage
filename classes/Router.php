@@ -22,7 +22,7 @@
 			$factory = new ControllerFactory();
 			$controller = $factory->getController($uriArr[1]);
 
-			$action = $uriArr[2];
+			$action = @$uriArr[2];
 			$params = $_GET;
 			self::$request = new Request($uri, $controller, $action, $params);
 		}
