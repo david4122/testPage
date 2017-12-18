@@ -159,6 +159,9 @@ footer {
 }
 
 @media (min-width: 800px){
+	.expand-dropdown {
+		display: none;
+	}
 }
 
 .dropdown .dropdown-content {
@@ -181,10 +184,6 @@ footer {
 	.dropdown:hover > .dropdown-content {
 		display: block;
 	}
-
-	.expand-dropdown {
-		display: none;
-	}
 }
 
 .dropdown-item {
@@ -200,7 +199,7 @@ footer {
 }
 
 @media (min-width: 800px){
-	.dropdown-nested .dropdown-content {
+	.dropdown .dropdown .dropdown-content {
 		top: 0;
 		margin-left: 100%;
 	}

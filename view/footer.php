@@ -5,6 +5,13 @@
 		<script src="jquery-3.2.1.min.js"></script>
 		<script>
 $(document).ready(function(){
+	$(window).on('orientationchange', function(e){
+		if(e.orientation == 'landscape')
+			$('.nav-item').slideDown();
+		else
+			$('.nav-item').slideUp();
+	});
+
 	let navbarPos = $('#navbar-block').offset().top;
 	$(document).on('scroll', function(){
 		if($(document).scrollTop()>navbarPos){
