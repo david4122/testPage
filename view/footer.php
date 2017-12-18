@@ -19,6 +19,14 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+	$('#show-menu').on('click', function(){
+		$('.nav-item').slideToggle('fast');
+	});
+
+	$('.expand-dropdown').on('click', function(e){
+		$(e.currentTarget).nextAll('.dropdown-content').slideToggle('fast');
+	});
 });
 		</script>
 	</body>

@@ -25,11 +25,13 @@
 			<div id="navbar-block">
 				<div class="wrap">
 					<ul id="navbar">
+						<li id="show-menu">&#9776;</li>
 						<li class="nav-item">
 							<a href="/">Test</a>
 						</li>
 						<li class="dropdown nav-item">
 							<a href="">Dropdown</a>
+							<span class="expand-dropdown"></span>
 							<ul class="dropdown-content">
 								<li class="dropdown-item">
 									<a href="">1</a>
@@ -46,9 +48,11 @@
 							<a href="/example">Example</a>
 						</li>
 						<li class="dropdown nav-item">
+							<span class="expand-dropdown"></span>
 							<a href="">Nested</a>
 							<ul class="dropdown-content">
 								<li class="dropdown-item dropdown-nested dropdown">
+									<span class="expand-dropdown"></span>
 									<a href="">1</a>
 									<ul class="dropdown-content">
 										<li class="dropdown-item">
@@ -63,12 +67,14 @@
 									</ul>
 								</li>
 								<li class="dropdown-item dropdown-nested dropdown">
-									<a href="">2</a>
+									<span class="expand-dropdown"></span>
+										<a href="">2</a>
 									<ul class="dropdown-content">
 										<li class="dropdown-item">
 											<a href="">I</a>
 										</li>
 										<li class="dropdown-item dropdown-nested dropdown">
+											<span class="expand-dropdown"></span>
 											<a href="">II</a>
 											<ul class="dropdown-content">
 												<li class="dropdown-item">
@@ -86,6 +92,7 @@
 											<a href="">III</a>
 										</li>
 										<li class="dropdown-item dropdown-nested dropdown">
+											<span class="expand-dropdown"></span>
 											<a href="">IV</a>
 											<ul class="dropdown-content">
 												<li class="dropdown-item">
@@ -99,6 +106,7 @@
 									</ul>
 								</li>
 								<li class="dropdown-item dropdown-nested dropdown">
+									<span class="expand-dropdown"></span>
 									<a href="">3</a>
 									<ul class="dropdown-content">
 										<li class="dropdown-item">

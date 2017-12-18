@@ -8,6 +8,7 @@
 			$template->assign(array(
 				'title' => 'Testing',
 				'description' => 'Test/learning page',
+				'request' => Router::getRequest(),
 				'controller' => 'Home page controller'
 			));
 			$template->display();
