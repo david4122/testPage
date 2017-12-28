@@ -1,4 +1,5 @@
 <div class="wrap content">
+	<h1><?= $header ?></h1>
 	<?= $content ?>
 </div>
 <div style="background-color: #77216F; color: #FFF">

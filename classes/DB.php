@@ -9,7 +9,7 @@
 		private function __construct($host, $user, $passwd, $name){
 			$this->db = new mysqli($host, $user, $passwd, $name);
 			if($this->db->connect_error)
-				die('Cannot connect to the database!');
+				throw new DBException('Cannot connect to the database!', $this->db->conect_errno);
 		}
 
 		public static function getInstance(){

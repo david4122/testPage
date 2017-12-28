@@ -10,22 +10,31 @@
 	</head>
 	<body>
 		<header>
-			<div class="row wrap">
+			<div id="page-header" class="row wrap">
 				<div id="logo-wrapper">
 					<a href="/">
 						<img id="logo" src="/assets/ubuntu.svg" alt="logo"/>
 					</a>
 				</div>
 				<div>
-					<a href="/" id="page-title">
+					<a href="/" class="page-title">
 						Test page
 					</a>
 				</div>
 			</div>
 			<div id="navbar-block">
 				<div class="wrap">
+					<div id="mobile-navbar">
+						<div>
+							<a href="/" class="page-title">Test page</a>
+						</div>
+						<div id="show-menu">
+							<div id="top" class="bar"></div>
+							<div id="middle" class="bar"></div>
+							<div id="bottom" class="bar"></div>
+						</div>
+					</div>
 					<ul id="navbar">
-						<li id="show-menu">&#9776;</li>
 						<li class="nav-item">
 							<a href="/">Test</a>
 						</li>

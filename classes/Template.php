@@ -15,6 +15,10 @@
 			$this->variables = array_merge($this->variables, $array);
 		}
 
+		public function set($var, $value){
+			$this->variables[$var] = $value;
+		}
+
 		public function display(){
 			extract($this->variables);
 			$templateDir = constant('TEMPLATE_DIR');

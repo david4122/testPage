@@ -28,7 +28,8 @@ $(document).ready(function(){
 	});
 
 	$('#show-menu').on('click', function(){
-		$('.nav-item').slideToggle('fast');
+		$('#show-menu').toggleClass('showed');
+		$('#navbar').slideToggle('fast');
 	});
 
 	$('.expand-dropdown').on('click', function(e){

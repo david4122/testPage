@@ -8,6 +8,7 @@
 			$template->assign(array(
 				'title' => 'Example',
 				'description' => 'Example page',
+				'header' => 'Example page',
 				'content' => $page['content']
 			));
 			$db->close();

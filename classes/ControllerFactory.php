@@ -5,10 +5,12 @@
 	class ControllerFactory {
 		public function getController($controller){
 			switch($controller){
+				case '':
+					return new HomePageController();
 				case 'example':
 					return new ExampleController();
 				default:
-					return new HomePageController();
+					return new NotFoundController();
 			}
 		}
 	}
