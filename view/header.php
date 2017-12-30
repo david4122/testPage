@@ -22,6 +22,7 @@
 					</a>
 				</div>
 			</div>
+			<div id="navbar-replacer" style="height: 0px;"></div>
 			<div id="navbar-block">
 				<div class="wrap">
 					<div id="mobile-navbar">
@@ -60,7 +61,7 @@
 							<span class="expand-dropdown"></span>
 							<a href="">Nested</a>
 							<ul class="dropdown-content">
-								<li class="dropdown-item dropdown-nested dropdown">
+								<li class="dropdown-item dropdown">
 									<span class="expand-dropdown"></span>
 									<a href="">1</a>
 									<ul class="dropdown-content">
@@ -75,14 +76,14 @@
 										</li>
 									</ul>
 								</li>
-								<li class="dropdown-item dropdown-nested dropdown">
+								<li class="dropdown-item dropdown">
 									<span class="expand-dropdown"></span>
 										<a href="">2</a>
 									<ul class="dropdown-content">
 										<li class="dropdown-item">
 											<a href="">I</a>
 										</li>
-										<li class="dropdown-item dropdown-nested dropdown">
+										<li class="dropdown-item dropdown">
 											<span class="expand-dropdown"></span>
 											<a href="">II</a>
 											<ul class="dropdown-content">
@@ -100,7 +101,7 @@
 										<li class="dropdown-item">
 											<a href="">III</a>
 										</li>
-										<li class="dropdown-item dropdown-nested dropdown">
+										<li class="dropdown-item dropdown">
 											<span class="expand-dropdown"></span>
 											<a href="">IV</a>
 											<ul class="dropdown-content">
@@ -114,7 +115,7 @@
 										</li>
 									</ul>
 								</li>
-								<li class="dropdown-item dropdown-nested dropdown">
+								<li class="dropdown-item dropdown">
 									<span class="expand-dropdown"></span>
 									<a href="">3</a>
 									<ul class="dropdown-content">
@@ -135,5 +136,4 @@
 					<div style="clear: both"></div>
 				</div>
 			</div>
-			<div id="navbar-replacer" style="height: 0px;"></div>
 		</header>

@@ -33,6 +33,10 @@ footer {
 	margin-bottom: 10px;
 }
 
+#page-header {
+	display: none;
+}
+
 #logo-wrapper {
 	display: none;
 }
@@ -58,6 +62,16 @@ footer {
 #navbar-block {
 	background-color: #F37320;
 	margin: 0;
+	transition: .3s;
+}
+
+.showed {
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 #navbar {
@@ -65,6 +79,10 @@ footer {
 	margin: 0;
 	list-style: none;
 	display: none;
+}
+
+.showed #navbar {
+	display: block;
 }
 
 .nav-item {
@@ -167,21 +185,25 @@ footer {
 	margin: 6px 0;
 }
 
-.showed #middle {
+.showed #show-menu #middle {
 	opacity: 0;
 }
 
-.showed #top {
+.showed #show-menu #top {
 	transform: translateY(11px) rotate(45deg);
 }
 
-.showed #bottom {
+.showed #show-menu #bottom {
 	transform: translateY(-11px) rotate(-45deg);
 }
 
 @media (min-width: 800px){
 	.row div {
 		display: inline-block;
+	}
+
+	#page-header {
+		display: block;
 	}
 
 	#logo-wrapper {

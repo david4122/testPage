@@ -28,8 +28,7 @@ $(document).ready(function(){
 	});
 
 	$('#show-menu').on('click', function(){
-		$('#show-menu').toggleClass('showed');
-		$('#navbar').slideToggle('fast');
+		$('#navbar-block').toggleClass('showed');
 	});
 
 	$('.expand-dropdown').on('click', function(e){
